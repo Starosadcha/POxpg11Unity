@@ -8,6 +8,7 @@ public class GameControler : MonoBehaviour
     public string Word ="after";
     public TextMeshProUGUI MainWord;
     public TextMeshProUGUI OurInput;
+    public TextMeshProUGUI SubmitedInput;
     public TMP_InputField InputField;
 
     // Start is called before the first frame update
@@ -19,6 +20,11 @@ public class GameControler : MonoBehaviour
     public void OnInputChanged(string input)
     {
         OurInput.text = input;
+    }
+    
+    public void OnClick ()
+    {
+
     }
         
 
