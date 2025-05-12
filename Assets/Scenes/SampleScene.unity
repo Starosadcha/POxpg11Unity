@@ -155,9 +155,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Word: after
+  LivesCount: 10
   MainWord: {fileID: 1510469589}
   OurInput: {fileID: 1033876835}
-  SubmitedInput: {fileID: 0}
+  SuggestionText: {fileID: 1843528287}
   InputField: {fileID: 1654622013}
 --- !u!114 &187252450
 MonoBehaviour:
@@ -763,7 +764,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 63}
+  m_AnchoredPosition: {x: 4.621, y: 63}
   m_SizeDelta: {x: 493.8928, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1033876834
@@ -1281,7 +1282,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 199}
+  m_AnchoredPosition: {x: 0, y: 197.1}
   m_SizeDelta: {x: 493.8928, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1654622012
@@ -1554,13 +1555,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 187252449}
+        m_TargetAssemblyTypeName: GameControler, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1616,7 +1617,7 @@ GameObject:
   - component: {fileID: 1843528288}
   - component: {fileID: 1843528287}
   m_Layer: 5
-  m_Name: OurInputText (1)
+  m_Name: SuggestedText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1638,8 +1639,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -195}
-  m_SizeDelta: {x: 493.8928, y: 50}
+  m_AnchoredPosition: {x: 0, y: -211.3}
+  m_SizeDelta: {x: 493.8928, y: 39.1278}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1843528287
 MonoBehaviour:
@@ -1688,8 +1689,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
